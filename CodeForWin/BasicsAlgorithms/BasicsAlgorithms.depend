@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1637256202 source:d:\fundamentalc\codeforwin\basicsalgorithms\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

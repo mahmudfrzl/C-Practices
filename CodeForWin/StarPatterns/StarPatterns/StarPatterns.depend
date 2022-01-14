@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1637305295 source:d:\fundamentalc\codeforwin\starpatterns\starpatterns\main.c
+	<stdio.h>
+	<stdlib.h>
+
