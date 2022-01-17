@@ -19,30 +19,38 @@ void getPrimeNumbers(int finishNum){
 
 }
 
-    int findPow(int num){
+    int findPow2(int num){
         int res = num*num;
         return res;
     }
 
-    void findPowWithAddress(int* res,int num){
-        *res = num * num;
+    void findPowWithAddress2(int* res,int* num){
+        *res = *num * *num;
     }
 
+    void findPow(int* res,int num1,int num2){
+        for(int i =1;i<=num2;i++){
+            *res *=  num1;
+        }
+    }
 int main()
 {
 
-    int num;
+    int num,num2;
     printf("Enter the number: ");
-    scanf("%d",&num);
-    int res ;
-    //res = findPow(num);
-    //printf("%d",res);
-    printf("\n-----------\n");
-    findPowWithAddress(&res,num);
-    printf("%d",res);
-
+    scanf("%d%d",&num,&num2);
 
   //  getPrimeNumbers(num);
+    int res = 1;
+    //res = findPow2(num);
+    //printf("%d",res);
+    printf("\n-----------\n");
+   // findPowWithAddress2(&res,&num);
+   // printf("%d",res);
+    printf("\n-----------\n");
+    findPow(&res,num,num2);
+    printf("%d",res);
+
 
     return 0;
 }
